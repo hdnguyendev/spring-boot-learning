@@ -1,7 +1,5 @@
 package hdnguyendev.fpt_project;
 
-import hdnguyendev.fpt_project.sb4.Girl;
-import hdnguyendev.fpt_project.sb4.GirlService;
 import hdnguyendev.fpt_project.sb7.DatabaseConnector;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -11,11 +9,11 @@ import org.springframework.context.ApplicationContext;
 // Spring's main task: create a container that contains our dependencies
 
 @SpringBootApplication
-public class FptProjectApplication {
+public class App {
 
     public static void main(String[] args) {
         // container = ApplicationContext
-        ApplicationContext context = SpringApplication.run(FptProjectApplication.class, args); // create Container
+        ApplicationContext context = SpringApplication.run(App.class, args); // create Container
 
 //        Outfit outfit = context.getBean(Outfit.class);
 //
@@ -43,8 +41,10 @@ public class FptProjectApplication {
 //        Girl girl = girlService.getRandomGirl();
 //        System.out.println(girl);
         /* SB 7*/
-        DatabaseConnector databaseConnector = context.getBean(DatabaseConnector.class);
-        databaseConnector.connect();
+//        DatabaseConnector databaseConnector = context.getBean(DatabaseConnector.class);
+//        databaseConnector.connect();
+        /* SB 8*/
+        
     }
 }
 
